@@ -1,0 +1,13 @@
+services:
+  bus180:
+    container_name: bus180
+    image: bus180:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    environment:
+      TELEGRAM_BOT_TOKEN: "${TELEGRAM_BOT_TOKEN}"
+      TELEGRAM_CHANNEL_ID: "${TELEGRAM_CHANNEL_ID}"
