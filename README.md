@@ -1,6 +1,10 @@
 # bus180X
 GTFS sometimes works
 
+St. Petersburg GTFS
+
+```https://transport.orgp.spb.ru/Portal/transport/internalapi/gtfs```
+
 Start:
 
 ```docker compose up -d```
